@@ -25,7 +25,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    public delegate void UpdateHealth(int newHealth);
+    public static event UpdateHealth OnUpdateHealth;
     /**************************************
      * 
      * PRIVATE VARIABLES
@@ -96,6 +97,12 @@ public class Player : MonoBehaviour
              * see link: https://docs.unity3d.com/ScriptReference/Animator.SetBool.html
              */
             gunAnim.SetBool("isFiring", false);
+        }
+    }
+
+    public void SendHealthData(int health) {
+        if (OnUpdateHealth != null) {
+            OnUpdateHealth(health);
         }
     }
 }

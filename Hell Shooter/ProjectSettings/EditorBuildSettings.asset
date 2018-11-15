@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Limbo.unity
     guid: 2c649e8cb6bbae4499236dd91549a6d8
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 6e4ca9693ca97a24faa021acd9606c2a
   m_configObjects: {}

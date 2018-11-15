@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
+  - Player Damage
+  - Enemy Health
+  - Player Health
+  - Enemy Damage
   - 
   - 
   - 
@@ -40,4 +40,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1532930991
+    locked: 0
+  - name: Player
+    uniqueID: 518194805
+    locked: 0
+  - name: Enemies
+    uniqueID: 2976484983
+    locked: 0
+  - name: FX
+    uniqueID: 1328511695
+    locked: 0
+  - name: Bullets
+    uniqueID: 2529039359
+    locked: 0
+  - name: Foreground
+    uniqueID: 3927037109
     locked: 0

@@ -43,7 +43,8 @@ GameObject:
   - component: {fileID: 114506829507188562}
   - component: {fileID: 95469613471425214}
   - component: {fileID: 114437272578845916}
-  m_Layer: 0
+  - component: {fileID: 114714413806658566}
+  m_Layer: 11
   m_Name: Hero
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -197,6 +198,39 @@ MonoBehaviour:
     type: 2}
   bulletSpawn: {fileID: 4320053567525728}
   fireTime: 0.2
+--- !u!114 &114714413806658566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1639272120807518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7d8c984ebf79446b39f7d6d1684c02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114437272578845916}
+        m_MethodName: SendHealthData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &114769218187435428
 MonoBehaviour:
   m_ObjectHideFlags: 1

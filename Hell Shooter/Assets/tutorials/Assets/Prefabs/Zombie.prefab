@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4116287876822294}
   - component: {fileID: 114857813025651454}
   - component: {fileID: 61756007294713582}
-  m_Layer: 11
-  m_Name: Hurter
+  m_Layer: 12
+  m_Name: Hurt Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4953360981879984}
   - component: {fileID: 212441153935974514}
   - component: {fileID: 58122466565798528}
+  - component: {fileID: 114152481141562600}
   - component: {fileID: 114883728120590258}
   - component: {fileID: 114190270292100476}
   - component: {fileID: 114705435823836484}
@@ -136,7 +137,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1472536081502948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4673128, y: -1.91, z: 0}
+  m_LocalPosition: {x: -12.319331, y: -1.9664304, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4068157451339966}
@@ -249,6 +250,18 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 1384683843465196, guid: 6d73f108abc046440b60927769ac8f5f,
     type: 2}
   adjustmentAngle: 0
+--- !u!114 &114152481141562600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1472536081502948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6258f4eafea44478bc1030e2c81ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToAdd: 1
 --- !u!114 &114190270292100476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -513,8 +526,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1538223699
-  m_SortingLayer: 2
+  m_SortingLayerID: -1318482313
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 66131b37a6f7a234f8b04a58931e92e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -558,8 +571,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1538223699
-  m_SortingLayer: 2
+  m_SortingLayerID: -1318482313
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 66131b37a6f7a234f8b04a58931e92e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -603,8 +616,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1538223699
-  m_SortingLayer: 2
+  m_SortingLayerID: -1318482313
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 66131b37a6f7a234f8b04a58931e92e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

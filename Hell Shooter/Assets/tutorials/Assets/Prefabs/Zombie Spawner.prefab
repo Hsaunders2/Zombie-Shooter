@@ -74,8 +74,8 @@ MonoBehaviour:
   zombiePrefab: {fileID: 1472536081502948, guid: 4e1f033b2bde49a46b4c3ee1ad9f6e45,
     type: 2}
   zombieSpawn: {fileID: 4973868513568478}
-  player: {fileID: 0}
-  spawnTime: 0.5
+  player: {fileID: 4865976348118084, guid: b2f814135dfe2da4dbce12470d6a800e, type: 2}
+  spawnTime: 5
 --- !u!114 &114581730762645290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -87,7 +87,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289e3b341c922074797c6f068ca46341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 0}
+  prefabToSpawn: {fileID: 1384683843465196, guid: 6d73f108abc046440b60927769ac8f5f,
+    type: 2}
   adjustmentAngle: 0
 --- !u!114 &114723989920714616
 MonoBehaviour:
@@ -100,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7d8c984ebf79446b39f7d6d1684c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 40
   onDie:
     m_PersistentCalls:
       m_Calls:
