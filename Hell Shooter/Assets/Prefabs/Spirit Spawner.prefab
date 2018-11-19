@@ -19,12 +19,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4894742842942366}
-  - component: {fileID: 114906294918802702}
   - component: {fileID: 58471700194562072}
   - component: {fileID: 212349796774362764}
   - component: {fileID: 114601480887511374}
   - component: {fileID: 114724643457769506}
   - component: {fileID: 114502653328994430}
+  - component: {fileID: 114754475045474132}
   m_Layer: 0
   m_Name: Spirit Spawner
   m_TagString: Untagged
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 398d16017ebae0147abf581070327425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114906294918802702
+--- !u!114 &114754475045474132
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -137,14 +137,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1639488395448962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332695a218c898c44b48a85e6aa61726, type: 3}
+  m_Script: {fileID: 11500000, guid: 29a7145ea164a9a488748e7dc9291047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombiePrefab: {fileID: 1875059648015662, guid: b62af94a7212a934288d968285f1c13d,
+  blueSpiritPrefab: {fileID: 1875059648015662, guid: b62af94a7212a934288d968285f1c13d,
     type: 2}
-  zombieSpawn: {fileID: 4894742842942366}
-  player: {fileID: 4865976348118084, guid: b2f814135dfe2da4dbce12470d6a800e, type: 2}
-  spawnTime: 5
+  spawn: {fileID: 4894742842942366}
+  player: {fileID: 0}
+  spawnTime: 2
 --- !u!212 &212349796774362764
 SpriteRenderer:
   m_ObjectHideFlags: 1
