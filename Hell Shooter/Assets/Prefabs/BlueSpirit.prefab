@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 58138492850013370}
   - component: {fileID: 114806693463339652}
   - component: {fileID: 114944701644427156}
+  - component: {fileID: 114829868117604810}
   m_Layer: 0
   m_Name: BlueSpirit
   m_TagString: Untagged
@@ -193,6 +194,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114829868117604810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875059648015662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6258f4eafea44478bc1030e2c81ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToAdd: 1
 --- !u!114 &114944701644427156
 MonoBehaviour:
   m_ObjectHideFlags: 1
