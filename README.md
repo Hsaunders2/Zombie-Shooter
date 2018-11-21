@@ -1,12 +1,13 @@
-Harry Saunders
+Student Name: Harry Saunders
 
-10587528
+Student Number: 10587528
 
-Computing and Games Development (4320)
+Course: Computing and Games Development (4320)
 
-AINT152 Games Workshop
+Module: AINT152 Games Workshop
 
-Unity 2D Zombie Shooter
+Assignment Title: Unity 2D Zombie Shooter
 
-Refrences
--
+Intstructions for usage: open Hell Shooter.exe
+
+Refrences: none
