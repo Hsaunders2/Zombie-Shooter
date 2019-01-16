@@ -19,14 +19,15 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4973868513568478}
-  - component: {fileID: 114297074818985916}
+  - component: {fileID: 114507964669696422}
+  - component: {fileID: 114791246652127182}
   - component: {fileID: 58285329701490548}
   - component: {fileID: 212174094368830074}
   - component: {fileID: 114581730762645290}
   - component: {fileID: 114913444098490778}
   - component: {fileID: 114723989920714616}
-  m_Layer: 0
-  m_Name: Zombie Spawner
+  m_Layer: 10
+  m_Name: Spirit Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1885654594697556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.38, y: 2.68, z: 0.019611666}
+  m_LocalPosition: {x: -7.70778, y: 6.6074066, z: 0.019611666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,7 +61,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &114297074818985916
+--- !u!114 &114507964669696422
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -68,14 +69,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1885654594697556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332695a218c898c44b48a85e6aa61726, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fb976488cfd7284897f66cacf716608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombiePrefab: {fileID: 1472536081502948, guid: 4e1f033b2bde49a46b4c3ee1ad9f6e45,
-    type: 2}
-  zombieSpawn: {fileID: 4973868513568478}
-  player: {fileID: 4865976348118084, guid: b2f814135dfe2da4dbce12470d6a800e, type: 2}
-  spawnTime: 5
+  time: 1
+  repeat: 1
+  onTimerComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114791246652127182}
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114581730762645290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,6 +148,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114791246652127182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1885654594697556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289e3b341c922074797c6f068ca46341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 1875059648015662, guid: b62af94a7212a934288d968285f1c13d,
+    type: 2}
+  adjustmentAngle: 0
 --- !u!114 &114913444098490778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,8 +205,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1318482313
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a9dbc0d77fdf9c74480cfeb06cf1c39c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

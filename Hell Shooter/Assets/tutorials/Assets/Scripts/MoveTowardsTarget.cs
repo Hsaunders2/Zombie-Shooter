@@ -99,5 +99,10 @@ public class MoveTowardsTarget : MonoBehaviour
         }
     }
 
+    public void setTarget(Transform newTarget)
+    {
+        target = newTarget;
+    }
+
 
 }

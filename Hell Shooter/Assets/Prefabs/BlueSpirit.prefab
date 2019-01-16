@@ -42,7 +42,11 @@ GameObject:
   - component: {fileID: 58138492850013370}
   - component: {fileID: 114806693463339652}
   - component: {fileID: 114944701644427156}
-  m_Layer: 0
+  - component: {fileID: 114624209938302290}
+  - component: {fileID: 114583263639411632}
+  - component: {fileID: 50908847890111288}
+  - component: {fileID: 114843479387547896}
+  m_Layer: 10
   m_Name: BlueSpirit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,6 +80,26 @@ Transform:
   m_Father: {fileID: 4040686208417084}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50908847890111288
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875059648015662}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &58138492850013370
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -145,8 +169,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5607c0f0d7ad64048adcb4848dd1ebf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 4050329645620820, guid: 9fed8e475ed31c84d8121dae01cb323a, type: 2}
   speed: 10
+--- !u!114 &114583263639411632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875059648015662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0669068d8779634580c93c6908ec547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSpawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114108707339454548}
+        m_MethodName: setTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114624209938302290}
+        m_MethodName: settarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &114624209938302290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875059648015662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecaa8c3b278651047bd849568bf5e4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  smoothing: 5
+  adjustmentAngle: 90
 --- !u!114 &114754902683683054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7d8c984ebf79446b39f7d6d1684c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 5
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -193,6 +269,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114843479387547896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875059648015662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6258f4eafea44478bc1030e2c81ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToAdd: 1
 --- !u!114 &114944701644427156
 MonoBehaviour:
   m_ObjectHideFlags: 1

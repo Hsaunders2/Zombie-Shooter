@@ -177,4 +177,9 @@ public class SmoothLookAtTarget : MonoBehaviour
             transform.rotation = Quaternion.Lerp(currentRotation, rotationInRadians, rotationSpeed);
         }
     }
+
+    public void settarget(Transform newTarget)
+    {
+        target = newTarget;
+    }
 }

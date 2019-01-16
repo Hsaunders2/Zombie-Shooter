@@ -44,6 +44,8 @@ GameObject:
   - component: {fileID: 114705435823836484}
   - component: {fileID: 114565891709447908}
   - component: {fileID: 114520319811214126}
+  - component: {fileID: 114653648664663228}
+  - component: {fileID: 50585385064499824}
   m_Layer: 10
   m_Name: Zombie
   m_TagString: Untagged
@@ -64,7 +66,7 @@ GameObject:
   - component: {fileID: 114770046050020726}
   - component: {fileID: 114981229823697320}
   - component: {fileID: 114583865399225986}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +86,7 @@ GameObject:
   - component: {fileID: 114610001474389746}
   - component: {fileID: 114695729158211096}
   - component: {fileID: 114116573599770508}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,6 +148,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50585385064499824
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1472536081502948}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &58122466565798528
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -358,6 +380,44 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114653648664663228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1472536081502948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0669068d8779634580c93c6908ec547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSpawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114190270292100476}
+        m_MethodName: setTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114705435823836484}
+        m_MethodName: settarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &114695729158211096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -450,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7d8c984ebf79446b39f7d6d1684c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 20
   onDie:
     m_PersistentCalls:
       m_Calls:
