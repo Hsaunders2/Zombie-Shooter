@@ -42,11 +42,16 @@ GameObject:
   - component: {fileID: 58138492850013370}
   - component: {fileID: 114806693463339652}
   - component: {fileID: 114944701644427156}
+<<<<<<< HEAD
   - component: {fileID: 114624209938302290}
   - component: {fileID: 114583263639411632}
   - component: {fileID: 50908847890111288}
   - component: {fileID: 114843479387547896}
   m_Layer: 10
+=======
+  - component: {fileID: 114829868117604810}
+  m_Layer: 0
+>>>>>>> 9418a53fd0373450b697e6296792aab14c723e23
   m_Name: BlueSpirit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +274,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+<<<<<<< HEAD
 --- !u!114 &114843479387547896
+=======
+--- !u!114 &114829868117604810
+>>>>>>> 9418a53fd0373450b697e6296792aab14c723e23
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
